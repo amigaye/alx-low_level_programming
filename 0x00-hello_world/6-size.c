@@ -2,10 +2,10 @@
 /*main function*/
 int main(void)
 {
-	char acharter;
+	char acharacter;
 	int ainteger;
 	long along;
-	long long alogalong;
+	long long alonglong;
 	float afloat;
 
 	printf("Size of a char: %lu byte(s)\n", sizeof(acharacter));
