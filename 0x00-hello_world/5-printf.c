@@ -1,9 +1,14 @@
-#inlude<stdio.c>
+#include <stdio.c>
 
-/*main vpid*/
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
+
 int main(void)
 {
 	printf("with grammar, but theoutcome is a pice og art\n");
 
-	return(0);			
+	return (0);
 }
