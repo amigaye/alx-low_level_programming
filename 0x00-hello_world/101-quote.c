@@ -1,8 +1,5 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <stdlib.h>
-#define RED "\e[0;31m"
-#define NC "\e[Om"
 
 /**
  * main - Entry point
@@ -12,6 +9,6 @@
 
 int main(void)
 {
-	fprintf(stderr, RED "and that piece of art is useful\" -Dora Korpar, 2015-10-19\n");
+	write(1, "and that piece of art is useful\" -Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
