@@ -1,5 +1,1 @@
-#ifndef _putchar_H_
-#define _putchar_H_
-int _putchar(char c)
-
-#endif
+int _putchar(char c);
