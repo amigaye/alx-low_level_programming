@@ -24,7 +24,7 @@ void _is_zero(char *argv[])
 			isn2 = 0;
 			break;
 		}
-	if (isn1 == 1 || isn2 == 1)
+		if (isn1 == 1 || isn2 == 1)
 		{
 			printf("0\n");
 			exit(0);
@@ -64,7 +64,8 @@ int _checknum(char *argv[], int n)
 			printf("Error\n");
 			exit(98);
 		}
-		return (ln);
+
+	return (ln);
 }
 /**
  *main - Entry point.
