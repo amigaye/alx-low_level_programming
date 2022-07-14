@@ -25,8 +25,8 @@ list_t *add_node(list_t **head, const char *str)
 {
 	int i, len;
 	char *content;
-
 	list_t *new;
+
 	if (str == NULL || head == NULL)
 		return (NULL);
 	len = _strlen(str);
