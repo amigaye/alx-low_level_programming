@@ -16,15 +16,17 @@ void jack_bauer(void)
 
 	for (thousand = 0; thousand <= 2; thousand++)
 	{
-		for (hundred = 0; hundred <= 3; hundred++)
+		for (hundred = 0; hundred <= 9; hundred++)
 		{
 			for (ten = 0; ten <= 5; ten++)
 			{
 				for (one = 0; one <= 9; one++)
 				{
+					if (thousand >= 2 && hundred > 3)
+						break;
 					_putchar(thousand + '0');
 					_putchar(hundred + '0');
-					_putchar(':');
+		   			_putchar(':');
 					_putchar(ten + '0');
 					_putchar(one + '0');
 					_putchar('\n');
@@ -32,5 +34,4 @@ void jack_bauer(void)
 			}
 		}
 	}
-	_putchar('\n');
 }
