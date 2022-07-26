@@ -59,7 +59,7 @@ void print_times_table(int n)
 					_putchar(a / 100 + '0');
 					_putchar((a % 100) / 10 + '0');
 					_putchar((a % 100) % 10 + '0');
-				}				
+				}
 			}
 			_putchar('\n');
 		}
