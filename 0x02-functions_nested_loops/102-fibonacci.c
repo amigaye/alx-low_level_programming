@@ -9,18 +9,18 @@ int main(void)
 	int i;
 	int firstNum;
 	int secondNum;
-	int nextNum;
+	unsigned long int nextNum;
 
 	firstNum = 1;
 	secondNum = 2;
 	nextNum = firstNum + secondNum;
 	printf("%d, %d, ", firstNum, secondNum);
-	for (i = 0; i < 50; i++)
+	for (i = 2; i < 50; i++)
 	{
 		if (i < 49)
-			printf("%u, ", nextNum);
+			printf("%ld, ", nextNum);
 		else
-			printf("%u", nextNum);
+			printf("%ld", nextNum);
 		firstNum = secondNum;
 		secondNum = nextNum;
 		nextNum = firstNum + secondNum;
