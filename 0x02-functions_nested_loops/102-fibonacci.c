@@ -15,7 +15,7 @@ int main(void)
 	secondNum = 2;
 	nextNum = firstNum + secondNum;
 	printf("%d, %d, ", firstNum, secondNum);
-	for (i = 2; i < 50; i++)
+	for (i = 1; i < 50; i++)
 	{
 		if (i < 49)
 			printf("%ld, ", nextNum);
