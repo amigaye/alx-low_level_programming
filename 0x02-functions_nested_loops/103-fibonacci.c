@@ -7,24 +7,25 @@
 int main(void)
 {
 	int i;
-	int firstNum;
-	int secondNum;
-	unsigned long int nextNum;
+	long int firstNum;
+	long int secondNum;
+	long int nextNum;
+	long int sum;
 
+	sum = 2;
 	firstNum = 1;
 	secondNum = 2;
 	nextNum = firstNum + secondNum;
-	printf("%d, %d, ", firstNum, secondNum);
-	for (i = 2; i < 50; i++)
+
+	for (i = 3; i <= 50; i++)
 	{
-		if (i < 49)
-			printf("%ld, ", nextNum);
-		else
-			printf("%ld", nextNum);
+		if (i % 2 == 0)
+			sum += nextNum;
 		firstNum = secondNum;
 		secondNum = nextNum;
 		nextNum = firstNum + secondNum;
 	}
+	printf("%ld", sum);
 	printf("\n");
 	return (0);
 }
