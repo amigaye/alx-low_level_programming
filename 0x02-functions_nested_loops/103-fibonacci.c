@@ -19,7 +19,7 @@ int main(void)
 
 	for (i = 3; i <= 50; i++)
 	{
-		if (i % 2 == 0)
+		if (nextNum % 2 == 0 && nextNum < 4000000)
 			sum += nextNum;
 		firstNum = secondNum;
 		secondNum = nextNum;
