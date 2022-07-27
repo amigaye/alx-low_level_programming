@@ -15,9 +15,9 @@ int main(void)
 	secondNum = 2;
 	nextNum = firstNum + secondNum;
 	printf("%.0f, %.0f, ", firstNum, secondNum);
-	for (i = 3; i <= 98; i++)
+	for (i = 3; i < 98; i++)
 	{
-		if (i < 98)
+		if (i < 97)
 			printf("%.0f, ", nextNum);
 		else
 			printf("%.0f", nextNum);
