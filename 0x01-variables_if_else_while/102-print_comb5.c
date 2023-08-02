@@ -6,34 +6,24 @@
  */
 int main(void)
 {
-	int thousands;
-	int hundreds;
 	int tens;
 	int ones;
 
-	for (thousands = 0; thousands <= 9; thousands++)
+	for (tens = 0; tens <= 99; tens++)
 	{
-		for (hundreds = thousands; hundreds <= 9; hundreds++)
+		for (ones = 0; ones <= 99; ones++)
 		{
-			for (tens = thousands; tens <= 9; tens++)
+			if (tens < ones)
 			{
-				for (ones = tens + 1; ones <= 9; ones++)
+				putchar((tens / 10) + '0');
+				putchar((tens % 10) + '0');
+				putchar(' ');
+				putchar((ones / 10) + '0');
+				putchar((ones % 10) + '0');
+				if (tens != 98 || ones != 99)
 				{
-					putchar(thousands + '0');
-					putchar(hundreds + '0');
+					putchar(',');
 					putchar(' ');
-					putchar(tens + '0');
-					putchar(ones + '0');
-
-					if (thousands < 8)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-					if (thousands == 8 && hundreds == 8)
-					{
-						putchar(',');
-					}
 				}
 			}
 		}
